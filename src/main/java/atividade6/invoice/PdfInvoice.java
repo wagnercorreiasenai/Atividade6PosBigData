@@ -54,7 +54,7 @@ public class PdfInvoice {
         String nomeCliente = "Nome do cliente: " + this.nf.name;
         this.documento.add(new Paragraph(nomeCliente));
 
-        String endereco = "Endereço: " + this.nf.address;
+        String endereco = "Endereço: " + this.nf.address + " / País: " + this.nf.county;
         this.documento.add(new Paragraph(endereco));
 
         this.documento.add(new Paragraph(linha));
